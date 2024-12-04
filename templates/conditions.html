@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+        <h1> EXecuted no error!</h1>
+        <h1>{{ name }}</h1>
+
+        {% if age > 20 %}
+            <h1> {{ age }} ah..Meeru peddhollu iypoyaaru saar..!</h1>
+        {% endif %}
+
+        {% if age > 20 and age < 40 %}
+            <h1>Twaraga Pelli Cheskoo ra malli pillani ivvaruu 😂</h1>
+        {% else %}
+            <h1>Else em ledh pelli cheskoo antae </h1>
+        {% endif %}
+            
+        {% if salary > 25000 %}
+            <h1>Konchem money avasaram broo.. dabbulu isthava..😢</h1>
+        {% elif salary > 20000 %}
+            <h1>Baaga Sampadisthunnav ga...😉</h1>
+        {% elif salary > 15000 %}
+            <h1>Salary Saripothundaaa..</h1>
+        {% else %}
+            <h1>Sarlae bro..meeku job iyna vundhi...maku adhi kuda ledhu ikkadaa...</h1>
+        {% endif %}
+
+        {% if salary > 20000 %}
+            {% if shift == nightshift %}
+                <h1>Health Chuskoo bruhh</h1>
+            {% else %}
+                <h1>Enjoyy Pandagoww</h1>
+            {% endif %}
+        {% else %}
+            <h1>Sarsarlae.. ennennoo ankuntaam anni jaruguthaaya enti..🥲</h1>
+        {% endif %}
+    </center>
+</body>
+</html>
